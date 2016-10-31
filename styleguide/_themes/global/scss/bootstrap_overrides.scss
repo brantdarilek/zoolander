@@ -31,6 +31,14 @@
   background-color: $brand-success;
 }
 
+//Forms
+.form-control.form-checkboxes,
+.form-control.form-radios {
+  height: auto;
+  border: 0;
+  box-shadow: none;
+}
+
 // Footer
 .footer {
   li {
