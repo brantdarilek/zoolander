@@ -31,7 +31,7 @@
 
   .navbar-topItem {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: $font-weight-bold;
     text-transform: uppercase;
 
     &.open {
@@ -43,7 +43,7 @@
     .navbar-dropDownLink,
     .navbar-tertiary-dropDownLink {
       color: $white;
-      font-size: .8em;
+      font-size: .95em;
       line-height: 1.5em;
       padding: 6px 15px;
       text-decoration: none;
@@ -58,7 +58,7 @@
 
     .navbar-dropDownLabel {
       color: $gray-light;
-      font-size: .9em;
+      font-size: .95em;
       line-height: 1.5em;
       margin: 0;
       padding: 6px 15px;
@@ -259,7 +259,7 @@
   border: 1px solid $gray-lighter;
   outline: none;
   padding: 3px;
-  width: 80%;
+  width: 72%;
 }
 
 .navbar-searchButton {
@@ -267,9 +267,17 @@
   margin: 0;
   opacity: .7;
   padding: 6.5px;
-  width: 20%;
+  width: 28%;
 }
 
+// After-nav offsets.
+.contentOffset {
+  margin-top: 98px;
+}
+
+.contentOffset-landingPage {
+  margin-top: 50px;
+}
 
 @media only screen and (min-width: $screen-sm-min) {
   .navbar-searchicon {
@@ -291,10 +299,6 @@
       margin-left: 10px;
     }
   }
-
-  .navbar-dropDown-triggerActive {
-    background-color: $gray;
-  }
 }
 
 
@@ -307,6 +311,7 @@
       .navbar-dropDownLink,
       .navbar-dropDownLabel,
       .navbar-tertiary-dropDownLink {
+        font-size: .8em;
         padding: 7px 15px 7px 25px;
       }
 
@@ -322,6 +327,10 @@
 
   .navbar-container {
     max-width: $screen-md;
+  }
+
+  .contentOffset {
+    margin-top: 63px;
   }
 }
 
